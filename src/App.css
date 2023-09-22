@@ -1,0 +1,68 @@
+
+
+.classApp {
+  position: relative;
+  
+  left:30%;
+  background-color: black;
+  height: 563px;
+  width: 430px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.num 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  background-image: linear-gradient(45deg, red,orange,yellow,green,blue,white,violet);
+  background-size: 200% 200%;
+  animation: animate 15s linear infinite;
+  margin:30px 20px 15px 20px ;
+  
+  border-radius: 20px;
+  width:350px;
+}
+@keyframes animate {
+  0% {
+      background-position: 0% 100%;
+      /*left-bottom will be visible of original*/
+  }
+  50% {
+      background-position: 100% 0%;
+      /*top-right will be visible of original*/
+  }
+  100% {
+      background-position: 0% 100% ;
+      /*left-bottom will be visible of original*/
+  }
+}
+.num h2{
+ 
+  background-color: black;
+  padding: 10px 55px;
+  border-radius: 10px;
+  
+  
+}
+
+.back
+{
+   
+   position: absolute;
+   top:10px;
+   left: 10px;
+   font-weight: bolder;
+   font-size: xx-large;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 5px;
+}

@@ -1,0 +1,88 @@
+/* styles.css */
+.custom-style {
+    background-image: linear-gradient(45deg, red,orange,yellow,green,blue,white,violet);
+    background-size: 200% 200%;
+    padding: 10px;
+    font-size: 16px;
+    width:350px;
+    height:350px;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    animation: animate 15s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+        background-position: 0% 100%;
+        /*left-bottom will be visible of original*/
+    }
+    50% {
+        background-position: 100% 0%;
+        /*top-right will be visible of original*/
+    }
+    100% {
+        background-position: 0% 100% ;
+        /*left-bottom will be visible of original*/
+    }
+}
+.button-increment button
+{
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.button-increment
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav
+{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.nav button
+{
+  margin-top: 20px;
+  background-color: black;
+  
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.li
+{
+  color: skyblue;
+  text-decoration: none;
+}
+.rendered-component
+{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  font-size: 15px;
+  width:180px;
+  height:180px;
+  border-radius: 10px;
+  color: skyblue;    
+}
+
+  
